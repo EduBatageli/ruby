@@ -1,6 +1,9 @@
 class Dog
-    attr_accessor :nome
-    attr_reader :raca
+  # attr_accessor cria getter + setter (leitura e escrita)
+  attr_accessor :nome
+
+  # attr_reader cria apenas getter (somente leitura)
+  attr_reader :raca
 
   def initialize(nome, raca)
     @nome = nome
@@ -12,6 +15,7 @@ class Dog
   end
 
   def latir
+    # return é opcional; aqui fica explícito só para estudo
     return "Au Au"
   end
 end

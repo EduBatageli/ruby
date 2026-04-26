@@ -1,13 +1,21 @@
-nome = 'Eduardo' #tipo string
-idade = 25 #tipo integer
-altura = 1.75 #tipo float
-estudante = true #tipo boolean
-idade += 1 #incremento de 1 na idade
-nome += ' Batageli'.upcase #concatenação de string
+# Variáveis e tipos em Ruby
+#
+# Ruby é dinamicamente tipado: a variável não "tem tipo fixo";
+# quem tem tipo é o OBJETO que ela aponta.
 
-idade = idade.even? # se é par
+nome = "Eduardo"      # String
+idade = 25            # Integer
+altura = 1.75         # Float
+estudante = true      # TrueClass (boolean)
 
-puts nome #tipo string
-puts idade #tipo integer
-puts altura #tipo float
-puts estudante #tipo boolean
+idade += 1            # incremento
+nome += " Batageli".upcase # concatenação + método de String
+
+# Métodos úteis em números
+eh_par = idade.even?  # retorna true/false
+
+puts "nome: #{nome} (#{nome.class})"
+puts "idade: #{idade} (#{idade.class})"
+puts "altura: #{altura} (#{altura.class})"
+puts "estudante: #{estudante} (#{estudante.class})"
+puts "idade é par? #{eh_par}"
